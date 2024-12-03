@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Game Examples</title>
+    <link rel="stylesheet" href="Styles.css">
+    <style>
+        a{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px){
+            .container{
+                display: grid;
+                grid-template-columns: 1fr;
+        	    grid-template-rows: auto;
+			    grid-template-areas:
+                ".grid-item category"
+                "grid-item description"
+                "grid-item image";
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Modern Game Examples</h1>
+    </header>
+    <nav>
+        <a href="index.html">History</a>
+        <a href="games.html">Modern Examples</a>
+        <a href="engines.html">Development Tools</a>
+    </nav>
+    <div class="container">
+        <div class="grid-container">
+            <div class="grid-item category"><a>Open-World Adventure</a></div>
+            <div class="grid-item category"><a>RPG</a></div>
+            <div class="grid-item category"><a>Sandbox</a></div>
+            
+            <div class="grid-item description">
+                <strong>The Legend of Zelda: Breath of the Wild</strong> (2017) showcases expansive, open-world environments, offering players freedom to explore and discover on their terms.
+            </div>
+            <div class="grid-item description">
+                <strong>The Witcher 3: Wild Hunt</strong> (2015) offers a rich narrative and complex characters within a vast open world.
+            </div>
+            <div class="grid-item description">
+                <strong>Minecraft</strong> (2011) represents the sandbox genre, giving players tools to create and modify an open world with limitless possibilities.
+            </div>
+
+            <div class="grid-item image">
+                <img {max-width: 200%;} src="zelda.png" alt="The Legend of Zelda: Breath of the Wild">
+            </div>
+            <div class="grid-item image">
+                <img {max-width: 200%;} src="witcher3.jpg" alt="The Witcher 3: Wild Hunt">
+            </div>
+            <div class="grid-item image">
+                <img {max-width: 200%;} src="minecraft.jpg" alt="Minecraft">
+            </div>
+        </div>
+
+        <h2>Competitive Multiplayer and Community Engagement</h2>
+        <div class="grid-container">
+            <div class="grid-item category"><a>Battle Royale</a></div>
+            <div class="grid-item category"><a>MOBA</a></div>
+            <div class="grid-item category"><a>Creativity</a></div>
+            
+            <div class="grid-item description">
+                <strong>Fortnite</strong> (2017) fosters a vast online community, where players engage in live-service models, receiving new content and updates over time.
+            </div>
+            <div class="grid-item description">
+                <strong>League of Legends</strong> (2009) emphasizes ongoing engagement and player-driven evolution, allowing developers to adjust and expand the experience based on community feedback.
+            </div>
+            <div class="grid-item description">
+                <strong>Minecraft</strong> (2011) represents the sandbox genre, giving players tools to create and modify an open world with limitless possibilities.
+            </div>
+
+            <div class="grid-item image">
+                <img {max-width: 200%;} src="fortnite.jpg" alt="Fortnite">
+            </div>
+            <div class="grid-item image">
+                <img {max-width: 200%;} src="league.jpg" alt="League of Legends">
+            </div>
+            <div class="grid-item image">
+                <img {max-width: 200%;} src="minecraft.jpg" alt="Minecraft">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
